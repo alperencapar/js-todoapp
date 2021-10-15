@@ -1,6 +1,9 @@
+//! input selection
 const todoInput = document.querySelector("#todoInput");
-const searchButton = document.querySelector("#todoSearchButton");
 
+//! input button selection
+const searchButton = document.querySelector("#todoSearchButton");
+//! selected todos container for todo element adding for later
 const todoParent = document.querySelector(".todos")
 
 searchButton.addEventListener("click", addTodo);
