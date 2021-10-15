@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
     
+    <section>
+        <h2>Todo List</h2>
+        <div class="form-container">
+            <form action="">
+                <div class="form-row">
+                    <input type="text" name="" id="todoInput">
+                    <button id="todoSearchButton" type="submit"><i class="fas fa-plus-circle"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="todos-container">
+            <div class="todos">
+                <div class="todo">Javascript, CSS, HTML<div class="btn-container"><i class="fas fa-check"></i><i class="fas fa-times"></i></div></div>
+                <div class="todo">Django, Rest Api, Javascript, CSS, HTML<div class="btn-container"><i class="fas fa-check"></i><i class="fas fa-times"></i></div></div>
+                <div class="todo">Django, Rest Api, ReactJS, Javascript, CSS, HTML<div class="btn-container"><i class="fas fa-check"></i><i class="fas fa-times"></i></div></div>
+            </div>
+        </div>
+    </section>
+
+
 
     <script src="app.js"></script>
 </body>
