@@ -7,6 +7,11 @@ const searchButton = document.querySelector("#todoSearchButton");
 const todoParent = document.querySelector(".todos")
 
 const ui = new UI();
+const storage = new Storage();
+// storage.getTodoFromStorage();
+
+//!Event Listeners
+document.addEventListener("DOMContentLoaded", storage.getTodoFromStorage)   //When Dom fully loaded, get Todos From Storage and add to ui
 searchButton.addEventListener("click", addTodo);
 todoParent.addEventListener("click", todoEvent)
 
@@ -15,6 +20,7 @@ function addTodo(e){
     e.preventDefault()
     inputValue = todoInput.value
     ui.add(inputValue)
+    storage.saveTodoToStorage(inputValue)
     //! cleaning input, after adding todo to todos list 
     clearInput();
 }
