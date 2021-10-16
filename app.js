@@ -36,5 +36,5 @@ function todoEvent(e){
 }
 
 function clearInput(){
-    todoInput = ""
+    todoInput.value = ""
 }
