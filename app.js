@@ -8,7 +8,7 @@ const todoParent = document.querySelector(".todos")
 
 const ui = new UI();
 const storage = new Storage();
-// storage.getTodoFromStorage();
+
 
 //!Event Listeners
 document.addEventListener("DOMContentLoaded", storage.getTodoFromStorage)   //When Dom fully loaded, get Todos From Storage and add to ui
@@ -32,6 +32,7 @@ function todoEvent(e){
         todoDiv.classList.add("remove-animation")
         todoDiv.addEventListener("transitionend", function(){
             ui.removeElement(todoDiv)
+            storage.deleteTodoFromStorage(todoDiv.innerText)
         })
     }
 
