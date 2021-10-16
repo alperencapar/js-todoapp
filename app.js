@@ -15,7 +15,8 @@ function addTodo(e){
     e.preventDefault()
     inputValue = todoInput.value
     ui.add(inputValue)
-    
+    //! cleaning input, after adding todo to todos list 
+    clearInput();
 }
 
 function todoEvent(e){
@@ -32,4 +33,8 @@ function todoEvent(e){
         ui.completeElement(todoDiv)
     }
     
+}
+
+function clearInput(){
+    todoInput = ""
 }
